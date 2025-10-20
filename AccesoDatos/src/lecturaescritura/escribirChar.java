@@ -26,9 +26,9 @@ public class escribirChar {
 		 try {
 			 RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
 			 //Escritura de datos
-			 //escribirDatos(raf, 0, "Juan", "Perez", 80.2f);
-			 //escribirDatos(raf, 1, "Ana", "Lopez", 65.5f);
-			 //escribirDatos(raf, 2, "Luis", "Garcia", 75.3f);
+			 escribirDatos(raf, 0, "Juan", "Perez", 80.2f);
+			 escribirDatos(raf, 1, "Ana", "Lopez", 65.5f);
+			 escribirDatos(raf, 2, "Luis", "Garcia", 75.3f);
 
 			 //Lectura aleatoria
 			 int numRegistro = (posicion -1) * 68; //Posicion empieza en 1, no en 0
