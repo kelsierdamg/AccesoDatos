@@ -27,7 +27,9 @@ public class leerBuffered {
 	public static void leerDatos(BufferedReader br) throws IOException {
 		String linea;
 		while((linea = br.readLine()) != null) {
-			System.out.println(linea);
+			//System.out.println(linea);
+			//En lugar de imprimir las líneas podemos construir los objetos de vuelta
+			
 		}
 	}
 
