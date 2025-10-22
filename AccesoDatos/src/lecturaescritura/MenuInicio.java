@@ -21,7 +21,7 @@ public class MenuInicio {
 					System.out.println("Escribe algo:");
 					
 					linea = br.readLine();
-					System.out.println("Escribiste:"+linea);
+					System.out.println("Escribiste: "+linea);
 				}
 				else if(linea.equalsIgnoreCase("b")) {
 					
@@ -39,7 +39,7 @@ public class MenuInicio {
 		}
 	}
 	
-	private static void menu() {
+	public static void menu() {
 		System.out.println("Escriba una opción: ");
 		System.out.println("A: Imprime la linea ");
 		System.out.println("B: Muestra el menú ");
