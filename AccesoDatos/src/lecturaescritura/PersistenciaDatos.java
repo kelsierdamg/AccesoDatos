@@ -30,7 +30,7 @@ public class PersistenciaDatos {
 					String dni = br.readLine();
 					
 					usuarios.add(new Usuario(nombre, apellidos, dni));
-					añadirFichero(usuarios.get(0));
+					añadirFichero(usuarios.getLast());
 				}
 				if(linea.equalsIgnoreCase("b")) {
 					try(FileReader fr = new FileReader(FICHERO);
@@ -44,10 +44,14 @@ public class PersistenciaDatos {
 							String dni = partes[2];
 							
 							Usuario u = new Usuario(nombre, apellidos, dni);
-							usuarios.add(u);
-						}
-						for(Usuario u : usuarios) {
-							System.out.println(u);
+							
+							if(usuarios.contains(u)) {
+								return;
+							}
+							else {
+								usuarios.add(u);
+							}
+							System.out.println(linea2);
 						}
 					}
 				}
@@ -75,7 +79,7 @@ public class PersistenciaDatos {
 		try(FileWriter fw = new FileWriter(FICHERO, true);
 			BufferedWriter bw = new BufferedWriter(fw)) {
 			
-			bw.write("Nombre: " +u.getNombre()+ " Apellidos: " +u.getApellido()+ " DNI: "+u.getDni());
+			bw.write(u.getNombre() + "," + u.getApellido() + "," + u.getDni());
 			bw.newLine();
 		}
 	}

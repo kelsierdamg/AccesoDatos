@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<personas>
+ 	<persona>
+ 		<id>1</id>
+ 		<nombre>Juan</nombre>
+ 		<edad>30</edad>
+ 		<experiencia>
+	 		<empresa>Indra</empresa>
+	 		<fecIni>10-01-2002</fecIni>
+	 		<fecFin>10-01-2003</fecFin>
+ 		</experiencia>
+ 	</persona>
+ 	
+ 	<persona>
+ 		<id>2</id>
+ 		<nombre>Ana</nombre>
+ 		<edad>25</edad>
+ 		<experiencia>
+	 		<empresa>Coritel</empresa>
+	 		<fecIni>10-10-2003</fecIni>
+	 		<fecFin>10-10-2004</fecFin>
+ 		</experiencia>
+ 	</persona>
+</personas>
