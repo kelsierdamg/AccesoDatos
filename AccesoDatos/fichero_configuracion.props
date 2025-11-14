@@ -1,0 +1,45 @@
+# Fichero de configuracion Conexion a BBDD
+
+# sqlite
+sqlite.user=root
+sqlite.password=1234
+sqlite.database=PRUEBAS.sqlite
+sqlite.url=jdbc:sqlite:
+sqlite.driver=org.sqlite.JDBC
+sqlite.path=
+
+# hsqldb
+hsqldb.user=root
+hsqldb.password=1234
+hsqldb.database=PRUEBAS
+hsqldb.url=jdbc:hsqldb:file:
+hsqldb.driver=org.hsqldb.jdbc.JDBCDriver
+hsqldb.path=data
+
+# mysql
+mysql.user=root
+mysql.password=1234
+mysql.server=localhost
+mysql.database=space
+mysql.url=jdbc:mysql://
+mysql.driver=com.mysql.cj.jdbc.Driver
+mysql.port=3306
+
+
+# oracle
+oracle.user=root
+oracle.password=1234
+oracle.server=localhost
+oracle.database=space
+oracle.url=jdbc:oracle:thin:@//
+oracle.driver=oracle.jdbc.driver.OracleDriver
+oracle.port=1521
+
+# postgresql
+postgresql.user=alumno
+postgresql.password=alumno
+postgresql.server=192.168.56.101
+postgresql.database=pruebas
+postgresql.url=jdbc:postgresql://
+postgresql.driver=org.postgresql.Driver
+postgresql.port=5432
